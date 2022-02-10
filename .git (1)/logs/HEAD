@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 5cc7744f4e51752791b6fe702bf39065a4b64d92 rwaldron7 <rickwaldron7@gmail.com> 1625235673 +1000	commit (initial): Initial commit
+5cc7744f4e51752791b6fe702bf39065a4b64d92 c1896f5cd3019a1c69ac838b3d75091744dcb655 rwaldron7 <rickwaldron7@gmail.com> 1625235786 +1000	commit: Create index.html
+c1896f5cd3019a1c69ac838b3d75091744dcb655 6940abe90980d68601dfb39c204a0e8dd7d1211c rwaldron7 <rickwaldron7@gmail.com> 1625237016 +1000	pull --progress origin: Fast-forward
+6940abe90980d68601dfb39c204a0e8dd7d1211c bb098dfaca7ccf0ecfe9fe0350306f2430b4531c rwaldron7 <rickwaldron7@gmail.com> 1625314067 +1000	commit: added blog
+bb098dfaca7ccf0ecfe9fe0350306f2430b4531c c9ff57079319f4a076b2e2d03d0748d177a95e8e rwaldron7 <rickwaldron7@gmail.com> 1625314175 +1000	commit: changed blog.html to blog
+c9ff57079319f4a076b2e2d03d0748d177a95e8e 8e8e650d924737b8aec6494b1a081e54f1658b88 rwaldron7 <rickwaldron7@gmail.com> 1625314335 +1000	commit: changed back to blog.html
+8e8e650d924737b8aec6494b1a081e54f1658b88 8247d2e18cd4f6bfac05cd2b87f9f1c6a3ccf2e1 rwaldron7 <rickwaldron7@gmail.com> 1625314814 +1000	commit: added .htaccess

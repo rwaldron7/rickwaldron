@@ -1,18 +1,22 @@
+/* General styles for every element */
 * {
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
 }
 
+/* Eliminating the default margin and padding so that header sits flush with edges */
 body {
     background-color: white;
     margin: 0px;
     padding: 0px;
 }
 
+/* Making the rest of the website (class main) have a margin */
 .main {
     margin: 8px;
 }
 
+/* Settings for the header */
 .header {
     margin: 0px;
     padding: 0px;
@@ -30,6 +34,7 @@ nav {
     align-items: center;
 }
 
+/* Modifying some of the bullets in lists to ticks */
 ul.ticks {
     list-style: none;
 }
@@ -42,6 +47,7 @@ ul.ticks li {
     margin-left: -20px;
 }
 
+/* Setting the logo size */
 .logo {
     display: flex;
     height: 20vh;
@@ -64,6 +70,7 @@ img {
     padding: 0px;
 }
 
+/* Controlling the size of both the full club name and the shortened version for mobile devices */
 .club-long {
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -93,6 +100,7 @@ img {
     padding: 0px;
 }
 
+/* Controlling the nav links */
 .nav-links {
     display: flex;
     list-style: none;
@@ -111,6 +119,7 @@ img {
     font-weight: bold;
 }
 
+/* Setting up the hamburger menu for mobile devices */
 .burger {
     display: none;
     cursor: pointer;
@@ -123,13 +132,12 @@ img {
     margin: 10px;
 }
 
+/* Changing the display for screen width less than 900px (mobile devices) */
 @media screen and (max-width: 900px) {
-    body{
-        overflow-x: hidden;
-    }
     
     .nav-links{
         position: absolute;
+        overflow-x: hidden;
         right: 0px;
         height:fit-content;
         top: 20vh;
@@ -162,15 +170,25 @@ img {
 
 }
 
+/* Turning off the display of the club name when devices are small enough to cut the hamburger menu off */
 @media screen and (max-width: 600px) {
     .club-short {
         display: none;
     }
+    nav {
+        justify-content: end;
+    }
+    .burger {
+        margin-right: 20px;
+    }
+}
 
+/* Used for a script that displays the menu on click in mobile mode */
 .nav-active {
         transform: translateX(0%);
 }
 
+/* The image carousel */
 .carousel {
     width: 80vw;
     height: 70vh;

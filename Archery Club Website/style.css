@@ -135,9 +135,12 @@ img {
 /* Changing the display for screen width less than 900px (mobile devices) */
 @media screen and (max-width: 900px) {
     
+    body {
+        overflow-x: hidden;
+    }
+
     .nav-links{
         position: absolute;
-        overflow-x: hidden;
         right: 0px;
         height:fit-content;
         top: 20vh;

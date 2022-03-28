@@ -1,3 +1,5 @@
+// Script for toggling through photos in the image carousel on clicking left or right
+
 const buttons = document.querySelectorAll("[data-carousel-button]")
 
 buttons.forEach(button => {
@@ -16,6 +18,8 @@ buttons.forEach(button => {
         delete activeSlide.dataset.active
     })
 })
+
+// Script for displaying the nav links in mobile mode when the hamburger menu is pressed
 
 const navSlide = () => {
     const burger = document.querySelector('.burger');

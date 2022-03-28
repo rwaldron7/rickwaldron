@@ -259,3 +259,13 @@ img {
 .carousel-button.next {
     right: 1rem;
 }
+
+/* Turn off background colours, logo and image carousel when printing */
+@media print {
+    * {
+        background-color: white
+    }
+    .logo, .carousel {
+        display: none;
+    }
+} 

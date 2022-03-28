@@ -162,6 +162,11 @@ img {
 
 }
 
+@media screen and (max-width: 600px) {
+    .club-short {
+        display: none;
+    }
+
 .nav-active {
         transform: translateX(0%);
 }

@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content:flex-start
     align-items: center;
-    min-height: 20vh;
+    min-height: 200px;
     background-color: lightblue;
 }
 
@@ -50,7 +50,7 @@ ul.ticks li {
 /* Setting the logo size */
 .logo {
     display: flex;
-    height: 20vh;
+    height: 200px;
     width: auto;
     align-items: center;
     padding: 5px;
@@ -123,6 +123,7 @@ img {
 .burger {
     display: none;
     cursor: pointer;
+    align-self: right;
 }
 
 .burger div{
@@ -143,7 +144,7 @@ img {
         position: absolute;
         right: 0px;
         height:fit-content;
-        top: 20vh;
+        top: 200px;
         background-color: lightblue;
         display: flex;
         flex-direction: column;
@@ -151,7 +152,7 @@ img {
         padding-top: 5px;
         padding-bottom: 5px;
         width: 50%;
-        transform: translateX(100%);
+        display: none;
     }
 
     .club-short {
@@ -171,6 +172,11 @@ img {
         display: block;
     }
 
+    /* Used for a script that displays the menu on click in mobile mode */
+    .nav-active {
+        display: block;
+    }
+
 }
 
 /* Turning off the display of the club name when devices are small enough to cut the hamburger menu off */
@@ -186,10 +192,7 @@ img {
     }
 }
 
-/* Used for a script that displays the menu on click in mobile mode */
-.nav-active {
-        transform: translateX(0%);
-}
+
 
 /* The image carousel */
 .carousel {

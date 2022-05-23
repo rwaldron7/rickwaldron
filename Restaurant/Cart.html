@@ -49,10 +49,15 @@
     <div class="banner">
         <img src="images/banner.jpg" alt="This image cannot be displayed on this device.">
         <section class="main">
-            <h2>Order Online</h2>
-            <form action="Cart.html" method="GET">
-            <button id="big-button">Add to Cart</button>
-            <table class="menu">
+            <h2>Shopping Cart</h2>
+            <div><button id="clear">Clear Shopping Cart</button></div>
+            <div>
+                <table id="cart" class="menu">
+                    <tr class="top-row"><th>Item</th><td>Quantity</td><td>Price</td></tr>
+                </table>
+
+            <table class="menu" id="reference">
+            
             <tr><th colspan="4">Entrée</th></tr>
             <tr><th class="name">Vegetable Samosa</th>
                 <td>Deep fried pastry stuffed with lightly spiced potatoes and green peas</td>
@@ -267,12 +272,15 @@
                       <td></td>
                       <td class="price">$3.00</td><td><button class="add" type="button">Add</button></td>
                 </table>
+            </div>
+            <div>
+                <form action="Submit.html" method="GET">
+                    <fieldset id="submit-order">
+                        <!-- This is where orders will go to be submitted in the form -->
+                    </fieldset>
+                    <button id="big-button">Submit Order</button>
                 </form>
-                <div>
-                  <p>Free rice with all Curries (TAKEAWAY ONLY)</p>
-                  <p>All curries Gluten Free & Halal</p>
-                  <p>All prices include GST. Prices are subject to change without notice</p>
-                </div>
+            </div>
         </section>
     </div>
     <div class="footer">

@@ -530,7 +530,17 @@ table {
     font-size: 120%;
 }
 
-/* Bookings form */
+#submit label {
+    font-size: 90%;
+}
+
+#submit input {
+    display: block;
+    width: 200px;
+    height: 25px;
+}
+
+/* Settings for Bookings form */
 
 #bookings label {
     font-size: 90%;

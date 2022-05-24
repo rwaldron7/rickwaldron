@@ -13,7 +13,7 @@
     <title>Garden Indian Restaurant</title>
 </head>
 <body>
-    <!-- The header at the top of the page, containing the logo, club name and nav links  -->
+    <!-- The header at the top of the page, containing the restaurant name and nav links  -->
     <div class="header">
         <nav>
             <div class="club-long">
@@ -46,6 +46,7 @@
             </div>
         </div>
     </div>
+    <!-- The main section of the page, containing the content of the page  -->
     <div class="banner">
         <img src="images/banner.jpg" alt="This image cannot be displayed on this device.">
         <section class="main">
@@ -57,31 +58,39 @@
                 <form id="bookings" action="Submit.html" method="GET">
                     <div>
                         <label for="firstname">First Name</label>
-                        <input type="text" id="firstname" name="firstname">
+                        <input type="text" id="firstname" name="firstname" required>
                     </div>
                     <div>
                         <label for="lastname">Last Name</label>
-                        <input type="text" id="lastname" name="lastname">
+                        <input type="text" id="lastname" name="lastname" required>
                     </div>
                     <div>
                         <label for="mobile">Mobile Number</label>
-                        <input type="tel" id="mobile" name="mobile">
+                        <input type="tel" id="mobile" name="mobile" required>
                     </div>
                     <div>
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div>
                         <label for="date">Preferred Date</label>
-                        <input type="date" id="date" name="date">
+                        <input type="date" id="date" name="date" required>
                     </div>
                     <div>
                         <label for="time">Preferred Time</label>
-                        <input type="time" id="time" name="time">
+                        <input type="time" id="time" name="time" required>
                     </div>
                     <div>
-                        <label for="requests">Special requests (e.g. dietery requirements)</label>
-                        <input type="text" id="requests" name="requests">
+                        <label for="guests">Number of Guests</label>
+                        <input type="number" id="guests" name="guests" required>
+                    </div>
+                    <div>
+                        <label for="requests">Special Requests</label>
+                        <input type="text" id="requests" name="requests" placeholder="e.g. dietery requirements">
+                    </div>
+                    <div>
+                        <label for="occastion">Occasion</label>
+                        <input type="text" id="occastion" name="occastion" placeholder="e.g. birthday">
                     </div>
                     <div><button id="big-button">Place Booking</button></div>
                 </form>
@@ -105,6 +114,7 @@
             
         </section>
     </div>
+    <!-- The footer of the page, containing the opening hours, address and phone number  -->
     <div class="footer">
         <footer>
             <div>

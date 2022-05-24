@@ -42,9 +42,6 @@ searchIcon.addEventListener('click', () => {
     searchBar.classList.toggle('search-active');
 });
 
-
-
-
 // Script for searching the website
 
 try {
@@ -70,7 +67,7 @@ try {
 catch(err) {
 }
 
-// Shopping cart
+// Take away app, creating an input for quantity when user presses add next to a menu item
 
 const addButtons = document.querySelectorAll(".add");
 const foodName = document.querySelectorAll(".name");
@@ -92,7 +89,9 @@ for (i = 0; i < addButtons.length; i++) {
     }, {once: true});
 }
 
-if (window.location.pathname == '/Cart.html') {
+// Shopping cart, taking items and quantity from the URL and adding to local storage. Then, adding to the Cart page and a hidden form.
+
+try {
     const order = new URLSearchParams(window.location.search);
     const list = document.getElementById("cart");
     const submit = document.getElementById("submit-order");
@@ -125,14 +124,21 @@ if (window.location.pathname == '/Cart.html') {
     total.innerHTML = (`<th>Total Price</th><td></td><td>$${totalPrice.toFixed(2)}</td>`);
     list.append(total);
 }
+catch(err) {
+}
 
-const clear = document.getElementById("clear");
+// Clearing the shopping cart
+
 try {
+    const clear = document.getElementById("clear");
     clear.addEventListener('click', () => {
     localStorage.clear();
-    location.reload();
-    })
+    window.location = window.location.pathname;
+    });
 }
-catch {
+catch(err) {
 }
+
+
+
 

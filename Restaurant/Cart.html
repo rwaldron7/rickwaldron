@@ -13,7 +13,7 @@
     <title>Garden Indian Restaurant</title>
 </head>
 <body>
-    <!-- The header at the top of the page, containing the logo, club name and nav links  -->
+    <!-- The header at the top of the page, containing the restaurant name and nav links  -->
     <div class="header">
         <nav>
             <div class="club-long">
@@ -46,6 +46,7 @@
             </div>
         </div>
     </div>
+    <!-- The main section of the page, containing the content of the page  -->
     <div class="banner">
         <img src="images/banner.jpg" alt="This image cannot be displayed on this device.">
         <section class="main">
@@ -274,7 +275,15 @@
                 </table>
             </div>
             <div>
-                <form action="Submit.html" method="GET">
+                <form id="submit" action="Submit.html" method="GET">
+                    <div>
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="First Name" name="First Name" required>
+                    </div>
+                    <div>
+                        <label for="mobile">Mobile Number</label>
+                        <input type="tel" id="Mobile" name="mobile" required>
+                    </div>
                     <fieldset id="submit-order">
                         <!-- This is where orders will go to be submitted in the form -->
                     </fieldset>
@@ -283,6 +292,7 @@
             </div>
         </section>
     </div>
+    <!-- The footer of the page, containing the opening hours, address and phone number  -->
     <div class="footer">
         <footer>
             <div>
